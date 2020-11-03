@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+<car_shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_18029846.xsd">
+    <navigation_bar>
+        <logo />
+        <list>
+            <new_car>New</new_car>
+            <used_car>Used</used_car>
+            <sell_trade>Sell or Trade</sell_trade>
+            <research>Research</research>
+            <sign_up>Sign Up</sign_up>
+        </list>
+        <sign_up_logo />
+    </navigation_bar>
+    <slider />
+    <available_brands>
+        <brand_title>Available Brands</brand_title>
+        <brands>
+            <ford_logo brand="ford" />
+            <honda_logo brand="honda" />
+            <hyundai_logo brand="hyundai" />
+            <land_rover_logo brand="land_rover" />
+            <toyota_logo brand="toyota" />
+        </brands>
+    </available_brands>
+    <car_on_sale>
+        <sale_title>Available Cars on Sale</sale_title>
+        <stocks>
+            <car item_number="c1" owner_name="Pawan Chaudhary" address="Kathmandu" contact="9812345678">
+                <image img_no="img1" />
+                <model>Model: <model_data>Ecosport Titanium</model_data>
+                </model>
+                <brand>Brand: <brand_data>Ford</brand_data>
+                </brand>
+                <car_type>Car Type: <cartype_data>Suv</cartype_data>
+                </car_type>
+                <mileage>Mileage (kmpl): <mileage_data>15</mileage_data>
+                </mileage>
+                <seat>Seating Capacity: <seat_data>5</seat_data>
+                </seat>
+                <kilometer>Kilometer (km): <km_data>47000</km_data>
+                </kilometer>
+                <make_year>Make Year: <makeyear_data>2014</makeyear_data>
+                </make_year>
+                <engine>Engine (cc): <engine_data>1500</engine_data>
+                </engine>
+                <engine_type>Engine Type: <entype_data>Fuel</entype_data>
+                </engine_type>
+                <fuel>Fuel: <fuel_data>Petrol</fuel_data>
+                </fuel>
+                <transmission>Transmission: <trans_data>Manual</trans_data>
+                </transmission>
+                <color>Color: <color_data>Metallica Black</color_data>
+                </color>
+                <about_car>Description: <desc_data>
+                        <![CDATA[ Single Handed Ford Ecosportfully loaded 2015 Alloys. Dual Airbags, Abs and many more. No any damages and scratches on vehicle.]]>
+                    </desc_data>
+                </about_car>
+                <price>Price (NRs): <price_data>25,99,000</price_data>
+                </price>
+                <price_negotiable>Price Negotiable: <nego_data>Yes</nego_data>
+                </price_negotiable>
+            </car>
+            <car item_number="c2" blue_book="upto date">
+                <image img_no="img2" />
+                <model>Model: <model_data>Ioniq</model_data>
+                </model>
+                <brand>Brand: <brand_data>Hyundai</brand_data>
+                </brand>
+                <car_type>Car Type: <cartype_data>Hatchback</cartype_data>
+                </car_type>
+                <mileage>Mileage on full charge (km): <mileage_data>300</mileage_data>
+                </mileage>
+                <seat>Seating Capacity: <seat_data>5</seat_data>
+                </seat>
+                <kilometer>Kilometer (km): <km_data>30000</km_data>
+                </kilometer>
+                <make_year>Make Year: <makeyear_data>2017</makeyear_data>
+                </make_year>
+                <engine>Engine (cc): <engine_data>1600</engine_data>
+                </engine>
+                <engine_type>Engine Type: <entype_data>Electric Motor</entype_data>
+                </engine_type>
+                <fuel>Fuel: <fuel_data>NA</fuel_data>
+                </fuel>
+                <transmission>Transmission: <trans_data>Automatic</trans_data>
+                </transmission>
+                <color>Color: <color_data>White</color_data>
+                </color>
+                <about_car>Description: <desc_data>
+                        <![CDATA[ This vehicle is free from accident and completely scratchless with brand new looking interiors. its engine and condition are inspected by our experts.]]>
+                    </desc_data>
+                </about_car>
+                <price>Price (NRs): <price_data>49,99,000</price_data>
+                </price>
+                <price_negotiable>Price Negotiable: <nego_data>No</nego_data>
+                </price_negotiable>
+            </car>
+            <car item_number="c3" emi="cleared">
+                <image img_no="img3" />
+                <model>Model: <model_data>Range Rover Sport</model_data>
+                </model>
+                <brand>Brand: <brand_data>Land Rover</brand_data>
+                </brand>
+                <car_type>Car Type: <cartype_data>Suv</cartype_data>
+                </car_type>
+                <mileage>Mileage (kmpl): <mileage_data>16</mileage_data>
+                </mileage>
+                <seat>Seating Capacity: <seat_data>5</seat_data>
+                </seat>
+                <kilometer>Kilometer (km): <km_data>35000</km_data>
+                </kilometer>
+                <make_year>Make Year: <makeyear_data>2015</makeyear_data>
+                </make_year>
+                <engine>Engine (cc): <engine_data>2500</engine_data>
+                </engine>
+                <engine_type>Engine Type: <entype_data>Hybrid</entype_data>
+                </engine_type>
+                <fuel>Fuel: <fuel_data>Diseal</fuel_data>
+                </fuel>
+                <transmission>Transmission: <trans_data>Manual</trans_data>
+                </transmission>
+                <color>Color: <color_data>Black</color_data>
+                </color>
+                <about_car>Description: <desc_data>
+                        <![CDATA[ This vehicle is the most expensive vehicle among other vehicle in our shop. its very good in condition with lots of features like navigation system, parking assist, etc.]]>
+                    </desc_data>
+                </about_car>
+                <price>Price (NRs): <price_data>3,49,99,000</price_data>
+                </price>
+                <price_negotiable>Price Negotiable: <nego_data>No</nego_data>
+                </price_negotiable>
+            </car>
+            <car item_number="c4" owner_name="Prashar Dahal" contact="9852345679">
+                <image img_no="img4" />
+                <model>Model: <model_data>City SVMT</model_data>
+                </model>
+                <brand>Brand: <brand_data>Honda</brand_data>
+                </brand>
+                <car_type>Car Type: <cartype_data>Sedan</cartype_data>
+                </car_type>
+                <mileage>Mileage (kmpl): <mileage_data>13</mileage_data>
+                </mileage>
+                <seat>Seating Capacity: <seat_data>5</seat_data>
+                </seat>
+                <kilometer>Kilometer (km): <km_data>45000</km_data>
+                </kilometer>
+                <make_year>Make Year: <makeyear_data>2014</makeyear_data>
+                </make_year>
+                <engine>Engine (cc): <engine_data>1800</engine_data>
+                </engine>
+                <engine_type>Engine Type: <entype_data>Fuel</entype_data>
+                </engine_type>
+                <fuel>Fuel: <fuel_data>Petrol</fuel_data>
+                </fuel>
+                <transmission>Transmission: <trans_data>Manual</trans_data>
+                </transmission>
+                <color>Color: <color_data>Metallic Silver</color_data>
+                </color>
+                <about_car>Description: <desc_data>
+                        <![CDATA[ This vehicle is free from accidents and still fresh in condition. its engine and spare parts are checked and inspected by our experts.]]>
+                    </desc_data>
+                </about_car>
+                <price>Price (NRs): <price_data>27,99,000</price_data>
+                </price>
+                <price_negotiable>Price Negotiable: <nego_data>Yes</nego_data>
+                </price_negotiable>
+            </car>
+            <car item_number="c5" emi="cleared">
+                <image img_no="img5" />
+                <model>Model: <model_data>Etios V Grade</model_data>
+                </model>
+                <brand>Brand: <brand_data>Toyota</brand_data>
+                </brand>
+                <car_type>Car Type: <cartype_data>Sedan</cartype_data>
+                </car_type>
+                <mileage>Mileage (kmpl): <mileage_data>14</mileage_data>
+                </mileage>
+                <seat>Seating Capacity: <seat_data>5</seat_data>
+                </seat>
+                <kilometer>Kilometer (km): <km_data>16000</km_data>
+                </kilometer>
+                <make_year>Make Year: <makeyear_data>2014</makeyear_data>
+                </make_year>
+                <engine>Engine (cc): <engine_data>1500</engine_data>
+                </engine>
+                <engine_type>Engine Type: <entype_data>Fuel</entype_data>
+                </engine_type>
+                <fuel>Fuel: <fuel_data>Petrol</fuel_data>
+                </fuel>
+                <transmission>Transmission: <trans_data>Manual</trans_data>
+                </transmission>
+                <color>Color: <color_data>Prestige Black</color_data>
+                </color>
+                <about_car>Description: <desc_data>
+                        <![CDATA[ This vehicle drives and feels just as new. Vehicle has been fully tested and thoroughly inspected ready for Toyota lovers.]]>
+                    </desc_data>
+                </about_car>
+                <price>Price (NRs): <price_data>21,99,000</price_data>
+                </price>
+                <price_negotiable>Price Negotiable: <nego_data>No</nego_data>
+                </price_negotiable>
+            </car>
+            <car item_number="c6" blue_book="expired" emi="cleared">
+                <image img_no="img6" />
+                <model>Model: <model_data>I20 Active S</model_data>
+                </model>
+                <brand>Brand: <brand_data>Hyundai</brand_data>
+                </brand>
+                <car_type>Car Type: <cartype_data>Suv</cartype_data>
+                </car_type>
+                <mileage>Mileage (kmpl): <mileage_data>15</mileage_data>
+                </mileage>
+                <seat>Seating Capacity: <seat_data>5</seat_data>
+                </seat>
+                <kilometer>Kilometer (km): <km_data>29900</km_data>
+                </kilometer>
+                <make_year>Make Year: <makeyear_data>2016</makeyear_data>
+                </make_year>
+                <engine>Engine (cc): <engine_data>1200</engine_data>
+                </engine>
+                <engine_type>Engine Type: <entype_data>Fuel</entype_data>
+                </engine_type>
+                <fuel>Fuel: <fuel_data>Petrol</fuel_data>
+                </fuel>
+                <transmission>Transmission: <trans_data>Manual</trans_data>
+                </transmission>
+                <color>Color: <color_data>White</color_data>
+                </color>
+                <about_car>Description: <desc_data>
+                        <![CDATA[ Low run without a single scratch or damage. untouched spare type, in showroom condition. Well looked after and driven with extra care and love.]]>
+                    </desc_data>
+                </about_car>
+                <price>Price (NRs): <price_data>29,25,000</price_data>
+                </price>
+                <price_negotiable>Price Negotiable: <nego_data>Yes</nego_data>
+                </price_negotiable>
+            </car>
+        </stocks>
+    </car_on_sale>
+    <info>
+        <patent>&#169; 2020 True Car Auto Group. All Rights Reserved.</patent>
+        <contact>
+            <company>True Car Auto Group Pvt.Ltd.</company>
+            <location>Kamal Pokhari, Kathmandu Nepal</location>
+            <tel>tel: 01-4429999, 01-4438888</tel>
+            <mobile>Mobile: 9822508910, 9801504920</mobile>
+            <url>URL: www.truecar.com</url>
+            <email>e-mail: info@truecar.com</email>
+        </contact>
+        <description>
+            <![CDATA[TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.]]>
+        </description>
+        <aggrements>Terms of Service|Privacy Policy|Do Not Sell My Info</aggrements>
+    </info>
+</car_shop>

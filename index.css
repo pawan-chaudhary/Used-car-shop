@@ -1,0 +1,303 @@
+navigation_bar {
+    width: 100%;
+    height: 100px;
+}
+
+logo {
+    background-image: url(images/logo.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    top: 1%;
+    left: 2%;
+}
+
+list {
+    font-family: verdana;
+    font-size: 14px;
+    position: absolute;
+    margin: 10px;
+    top: 3%;
+    left: 64%;
+}
+
+list new_car,
+used_car,
+sell_trade,
+research,
+sign_up {
+    margin: 15px;
+}
+
+sign_up_logo {
+    background-image: url(images/user.png);
+    background-size: cover;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 3%;
+    left: 95%;
+}
+
+slider {
+    background-image: url(images/car1.png);
+    background-size: auto;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 500px;
+    animation: slide 60s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background: url(images/car2.png)
+    }
+
+    50% {
+        background: url(images/car3.png)
+    }
+
+    75% {
+        background: url(images/car4.png)
+    }
+
+    100% {
+        background: url(images/car5.png)
+    }
+}
+
+available_brands {
+    position: absolute;
+    top: 80.8%;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(235, 240, 250);
+}
+
+brand_title {
+    margin-left: 500px;
+    font-size: 50px;
+    font-weight: bold;
+    border: 2px solid rgb(255,0,0);
+    border-radius: 7px;
+
+}
+brands {
+    display: flex;
+    flex-direction: row;
+}
+
+[brand="ford"] {
+    background-image: url(images/ford.png);
+    background-size: cover;
+    position: absolute;
+    width: 210px;
+    height: 100px;
+    top: 20%;
+    left: 5%;
+}
+
+[brand="honda"] {
+    background-image: url(images/honda.png);
+    position: absolute;
+    background-size: cover;
+    width: 135.5px;
+    height: 100px;
+    top: 20%;
+    left: 28%;
+}
+
+[brand="hyundai"] {
+    background-image: url(images/hyundai.png);
+    position: absolute;
+    background-size: cover;
+    width: 185px;
+    height: 100px;
+    top: 20%;
+    left: 45%;
+}
+[brand="land_rover"] {
+    background-image: url(images/landrover.png);
+    position: absolute;
+    background-size: cover;
+    width: 185px;
+    height: 100px;
+    top: 20%;
+    left: 65%;
+}
+[brand="toyota"] {
+    background-image: url(images/toyota.png);
+    position: absolute;
+    background-size: contain;
+    width: 110px;
+    height: 90px;
+    top: 20%;
+    left: 85%;
+}
+
+car_on_sale {
+    position: absolute;
+    top: 120%;
+    height: 3250px;
+    background-color: rgb(255, 242, 230);
+    width: 100%;
+}
+car_on_sale sale_title {
+    margin-left: 450px;
+    font-size: 50px;
+    font-weight: bold;
+    border: 2px solid red;
+    border-radius: 7px;
+    
+}
+
+car, more_info {
+    display: flex;
+    flex-direction: column;
+    font-family: CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 500px;
+}
+[item_number="c1"] {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    border: 2px solid rgb(102, 0, 255);
+}
+[item_number="c2"] {
+    position: absolute;
+    top: 19%;
+    left: 55%;
+    border: 2px solid rgb(102, 0, 255);
+    
+}
+[item_number="c3"] {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border: 2px solid rgb(102, 0, 255);
+    
+}
+[item_number="c4"] {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    border: 2px solid rgb(102, 0, 255);
+    
+}
+[item_number="c5"] {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    border: 2px solid rgb(102, 0, 255);
+    
+}
+[item_number="c6"] {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    border: 2px solid rgb(102, 0, 255);
+    
+}
+[img_no="img1"] {
+    background-image: url(images/c1.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -145%;
+    border-radius: 10px;
+}
+
+[img_no="img2"] {
+    background-image: url(images/c2.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -145%;
+    border-radius: 10px;
+}
+[img_no="img3"] {
+    background-image: url(images/c3.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -145%;
+    border-radius: 10px;
+}
+[img_no="img4"] {
+    background-image: url(images/c4.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -145%;
+    border-radius: 10px;
+}
+[img_no="img5"] {
+    background-image: url(images/c5.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -145%;
+    border-radius: 10px;
+}
+[img_no="img6"] {
+    background-image: url(images/c6.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -145%;
+    border-radius: 10px;
+}
+info {
+    position: absolute;
+    top: 542%;
+    background-color: rgb(64, 64, 64);
+    height: 250px;
+    font-family: verdana;
+    width: 100%;
+    color: rgb(217, 217, 217);
+}
+
+patent {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 14px;
+}
+
+contact {
+    position: absolute;
+    top: 12%;
+    font-size: 14;
+    display: flex;
+    flex-direction: column;
+    right: 17%;
+    font-size: 15px;
+}
+
+description {
+    position: absolute;
+    top: 60%;
+    font-size: 13.5px;
+    left: 7%;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+}
+
+aggrements {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    font-size: 13px;
+    color: rgb(140, 140, 140);
+}

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="car_shop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="navigation_bar" />
+                <xs:element ref="slider" />
+                <xs:element ref="available_brands" />
+                <xs:element ref="car_on_sale" />
+                <xs:element ref="info" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="navigation_bar">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="logo" />
+                <xs:element ref="list" />
+                <xs:element ref="sign_up_logo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="logo">
+        <xs:complexType />
+    </xs:element>
+    <xs:element name="list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="new_car" />
+                <xs:element ref="used_car" />
+                <xs:element ref="sell_trade" />
+                <xs:element ref="research" />
+                <xs:element ref="sign_up" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="new_car" type="xs:string" />
+    <xs:element name="used_car" type="xs:string" />
+    <xs:element name="sell_trade" type="xs:string" />
+    <xs:element name="research" type="xs:string" />
+    <xs:element name="sign_up" type="xs:string" />
+    <xs:element name="sign_up_logo">
+        <xs:complexType />
+    </xs:element>
+    <xs:element name="slider">
+        <xs:complexType />
+    </xs:element>
+    <xs:element name="available_brands">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="brand_title" />
+                <xs:element ref="brands" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="brand_title" type="xs:string" />
+    <xs:element name="brands">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ford_logo" />
+                <xs:element ref="honda_logo" />
+                <xs:element ref="hyundai_logo" />
+                <xs:element ref="land_rover_logo" />
+                <xs:element ref="toyota_logo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ford_logo">
+        <xs:complexType>
+            <xs:attribute name="brand" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="honda_logo">
+        <xs:complexType>
+            <xs:attribute name="brand" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="hyundai_logo">
+        <xs:complexType>
+            <xs:attribute name="brand" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="land_rover_logo">
+        <xs:complexType>
+            <xs:attribute name="brand" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="toyota_logo">
+        <xs:complexType>
+            <xs:attribute name="brand" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="car_on_sale">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sale_title" />
+                <xs:element ref="stocks" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="sale_title" type="xs:string" />
+    <xs:element name="stocks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded" ref="car" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="car">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="image" />
+                <xs:element ref="model" />
+                <xs:element ref="brand" />
+                <xs:element ref="car_type" />
+                <xs:element ref="mileage" />
+                <xs:element ref="seat" />
+                <xs:element ref="kilometer" />
+                <xs:element ref="make_year" />
+                <xs:element ref="engine" />
+                <xs:element ref="engine_type" />
+                <xs:element ref="fuel" />
+                <xs:element ref="transmission" />
+                <xs:element ref="color" />
+                <xs:element ref="about_car" />
+                <xs:element ref="price" />
+                <xs:element ref="price_negotiable" />
+            </xs:sequence>
+            <xs:attribute name="item_number" type="xs:string" use="required" />
+            <xs:attribute name="owner_name" type="xs:string" use="optional" />
+            <xs:attribute name="address" type="xs:string" use="optional" />
+            <xs:attribute name="contact" type="xs:integer" use="optional" />
+            <xs:attribute name="blue_book" type="xs:string" use="optional" />
+            <xs:attribute name="emi" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:attribute name="img_no" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="model">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="model_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="model_data" type="xs:string" />
+    <xs:element name="brand">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="brand_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="brand_data" type="xs:string" />
+    <xs:element name="car_type">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="cartype_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="cartype_data">
+    <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Suv"/>
+                <xs:enumeration value="Hatchback"/>
+                <xs:enumeration value="Sedan"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="mileage">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="mileage_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mileage_data" type="xs:integer" />
+    <xs:element name="seat">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="seat_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="seat_data" >
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[0-9]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="kilometer">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="km_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="km_data" type="xs:integer" />
+    <xs:element name="make_year">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="makeyear_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="makeyear_data" type="xs:integer" />
+    <xs:element name="engine">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="engine_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="engine_data" type="xs:integer" />
+    <xs:element name="engine_type">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="entype_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="entype_data" type="xs:string" />
+    <xs:element name="fuel">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="fuel_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fuel_data" type="xs:string" />
+    <xs:element name="transmission">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="trans_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="trans_data">
+    <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Manual"/>
+                <xs:enumeration value="Automatic"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="color">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="color_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="color_data" type="xs:string" />
+    <xs:element name="about_car">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="desc_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="desc_data" type="xs:string" />
+    <xs:element name="price">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="price_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="price_data">
+       <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="6"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="price_negotiable">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="nego_data" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nego_data">
+    <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Yes"/>
+                <xs:enumeration value="No"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="patent" />
+                <xs:element ref="contact" />
+                <xs:element ref="description" />
+                <xs:element ref="aggrements" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="patent" type="xs:string" />
+    <xs:element name="contact">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="company" />
+                <xs:element ref="location" />
+                <xs:element ref="tel" />
+                <xs:element ref="mobile" />
+                <xs:element ref="url" />
+                <xs:element ref="email" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="company" type="xs:string" />
+    <xs:element name="location" type="xs:string" />
+    <xs:element name="tel" type="xs:string" />
+    <xs:element name="mobile" type="xs:string" />
+    <xs:element name="url" type="xs:string" />
+    <xs:element name="email" type="xs:string" />
+    <xs:element name="description" type="xs:string" />
+    <xs:element name="aggrements" type="xs:string" />
+</xs:schema>
